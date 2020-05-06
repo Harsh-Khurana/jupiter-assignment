@@ -1,0 +1,33 @@
+import React from 'react';
+// import RootMenu from './RootMenu';
+const Sidebar = props =>{
+
+	const tasks = props.tasks.map((task,index)=>{
+		return <li key={index}>{task}</li>
+	});
+
+	const profileItems=["Settings","Notification"];
+
+	return(
+		<div>
+			<RootMenu header={"Profile"} items={profileItems} />			
+			<RootMenu header={"My Tasks"} items={tasks} />			
+		</div>
+	);
+}
+
+export default Sidebar;
+
+// <div className="root-menu">
+// 				<span onClick={props.displayToggler}>Profile</span>
+// 				<ul style={props.isDisplay}>
+// 					<li>Settings</li>
+// 					<li>Notification</li>
+// 				</ul>
+// 			</div>
+// 			<div className="root-menu">
+// 				<span onClick={props.displayToggler}>My Tasks</span>
+// 				<ul style={props.isDisplay}>
+// 					{tasks}
+// 				</ul>
+// 			</div>

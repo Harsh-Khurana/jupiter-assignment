@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+#main-display{
+	display: flex;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+input{
+	text-align:center;
+	padding:3px 1.5rem;
+	border-radius: 5px;
+	border:2px solid grey;
+}
+.navbar{
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+	padding-right: 20px;
+	font-size: 1.3rem;
+}
+.align-item{
+	text-align:center;
+}
+ul{
+	list-style: none;
+}
+.form-input{
+	width:30%;
+	padding:5px 0px;
+}
+#above-card{
+	margin:2px auto;
+	padding:6px;
+	width:8rem;
+	background-color:lightgrey;
+	border-radius: 3px;
+}
+label{
+	width:11.7rem;
+	background-color:lightgrey;
+	border-radius: 3px;
+	padding:5px;
+}
+@media only screen and (max-width: 768px){
+	label{
+		width:5.5rem;
+	}
+}
+.form-element{
+	margin:35px 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.outer-div{
+	margin:10px auto;
+	text-align: center;
+	width:58%;
+}
+.card{
+	margin-top:10px;
+	padding:35px 0px;
+	border:1px solid black;
+	box-shadow: 2px 2px 5px grey;
+}
+.button-element{
+	display: flex;
+	justify-content: flex-end;
+}
+#cancel,#submit,#validate{
+	padding:8px 20px;
+	margin-right: 20px;
+	transition: all 1s;
+	border:none;
+	color:white;
+}
+@media only screen and (max-width: 500px){
+	#cancel,#submit,#validate{
+		padding:8px 10px;
+		margin-right: 3px;
+	}	
+}
+#cancel{
+	background-color: #e84a4a;
+}
+#submit{
+	background-color: #1ce718;
+}
+#validate{
+	background-color: #31bff6;
+}
+#cancel:hover,#submit:hover,#validate:hover{
+	transform:scale(1.1);
+}
+.adjust-sidebar{
+	font-weight: bold;
+	margin-top:20px;
+	padding:20px;
+}
+.sidebar-element{
+	margin:6px;
+	padding:5px 12px;
+	border:1px solid blue;
+	background-color:lightblue;
+	border-radius: 3px;	
+	text-align: center;
+}
+.sidebar-header{
+	border:1px solid #c10101;
+	background-color: #fe6262;
+	margin-top:10px;
+	width:4.5rem;
+}
+ul{
+	padding-left:10px;
+}
+.toggle-button{
+	border:1px solid blue;
+	border-radius: 5px;
+	padding:0px;
+	text-align: center;
+
+}
+.on,.off{
+	height: 20px;
+	padding:0px 14px;
+	width:100%;
+	margin:0px;
+	height: auto;
+}
+.toggle-elements{
+	width:20%;
+	text-align: center;
+}
+#checkbox-enable{
+	margin-right: 18%;
+}
+option,select,textarea{
+	background:lightgrey;
+	padding:5px 0px;
+	border-radius: 5px;
+}
+option{
+	background: #ededed	;
+}
+textarea{
+	font-size: 1.2rem;
+	width:30% !important;
+}
+#shift-right-sql{
+	margin-left: 25px;
+}
+@media only screen and (max-width: 500px){
+	#shift-right-sql{
+		margin-left: 0px;
+	}
+}
